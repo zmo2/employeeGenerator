@@ -67,15 +67,15 @@ function getInfo(){
         ]).then(function(res){
             switch(res.title){
                 case "Manager":
-                    let manager = new Manager(res.name, res.id, res.title,res.email, res.officeNumber)
+                    let manager = new Manager(res.name, res.id, res.email, res.officeNumber)
                     inpArray.push(manager)
                     break
                 case "Engineer":
-                    let engineer = new Engineer(res.name, res.id, res.title, res.email, res.github)
+                    let engineer = new Engineer(res.name, res.id, res.email, res.github)
                     inpArray.push(engineer)
                     break
                 case "Intern":
-                    let intern = new Intern(res.name, res.id, res.title, res.email, res.school)
+                    let intern = new Intern(res.name, res.id, res.email, res.school)
                     inpArray.push(intern)
             }
             console.log(inpArray)
